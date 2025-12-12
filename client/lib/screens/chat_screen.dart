@@ -1,6 +1,8 @@
-import 'dart:convert'; // Để xử lý dữ liệu JSON
+import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http; // Thư viện gọi Server
+import 'package:http/http.dart' as http;
+
+import '../chat_message.dart'; // model ChatMessage nằm ở lib/chat_message.dart
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({super.key});
@@ -10,134 +12,258 @@ class ChatScreen extends StatefulWidget {
 }
 
 class _ChatScreenState extends State<ChatScreen> {
+  final List<ChatMessage> _messages = [];
   final TextEditingController _controller = TextEditingController();
-  final List<Map<String, dynamic>> _messages = []; // List tin nhắn
-  bool _isLoading = false; // Trạng thái chờ server
+  bool _isSending = false;
 
-  // Hàm gọi Server Python
+  // Nếu chạy Android emulator: đổi 127.0.0.1 -> 10.0.2.2
+  final String _apiUrl = 'http://127.0.0.1:8000/chat';
+
+  // 💡 Các câu hỏi gợi ý cho sinh viên
+  final List<String> _quickQuestions = [
+    'Thông tin tuyển sinh ngành Công nghệ thông tin.',
+    'Điều kiện xét tuyển của trường là gì?',
+    'Học phí 1 năm khoảng bao nhiêu?',
+    'Có những loại học bổng nào?',
+    'Điều kiện nhận học bổng là gì?',
+    'Thủ tục nhập học cần những giấy tờ gì?',
+    'Quy định về bảo lưu, tạm dừng học như thế nào?',
+    'Thời gian học, lịch học trong tuần ra sao?',
+  ];
+
   Future<void> _sendMessage() async {
-    if (_controller.text.isEmpty) return;
+    final text = _controller.text.trim();
+    if (text.isEmpty) return;
 
-    // 1. Lấy nội dung user nhập
-    String userText = _controller.text;
-    _controller.clear();
-
-    // 2. Hiện tin nhắn User lên màn hình ngay lập tức
+    // 1. Thêm tin nhắn người dùng
     setState(() {
-      _messages.add({"text": userText, "isUser": true});
-      _isLoading = true; // Bật icon loading
+      _messages.add(ChatMessage(text: text, isUser: true));
+      _controller.clear();
+      _isSending = true;
     });
 
     try {
-      // 3. Gửi sang Server Python
-      // Lưu ý: Nếu chạy trên Android Emulator thì đổi 127.0.0.1 thành 10.0.2.2
-      final url = Uri.parse('http://127.0.0.1:8000/chat'); 
-      
+      final uri = Uri.parse(_apiUrl);
       final response = await http.post(
-        url,
-        headers: {"Content-Type": "application/json"},
-        body: jsonEncode({"text": userText}),
+        uri,
+        headers: {'Content-Type': 'application/json'},
+        body: jsonEncode({'text': text}),
       );
 
-      // 4. Xử lý kết quả trả về
-      if (response.statusCode == 200) {
-        // Giải mã cục JSON từ server: {"reply": "..."}
-        final data = jsonDecode(utf8.decode(response.bodyBytes));
-        String botReply = data['reply'];
+      if (!mounted) return;
 
-        setState(() {
-          _messages.add({"text": botReply, "isUser": false});
-        });
+      if (response.statusCode == 200) {
+        final data = jsonDecode(response.body);
+
+        final reply =
+            data['reply'] as String? ?? 'Không nhận được câu trả lời.';
+        final source = data['source'] as String?;
+        final faqId = data['faq_id'];
+        final topic = data['topic'] as String?;
+
+        _messages.add(
+          ChatMessage(
+            text: reply,
+            isUser: false,
+            source: source,
+            faqId: faqId is int ? faqId : null,
+            topic: topic,
+          ),
+        );
       } else {
-        setState(() {
-          _messages.add({"text": "Lỗi Server: ${response.statusCode}", "isUser": false});
-        });
+        _messages.add(
+          ChatMessage(
+            text: 'Có lỗi khi kết nối server (mã ${response.statusCode}).',
+            isUser: false,
+            source: 'system',
+          ),
+        );
       }
     } catch (e) {
-      // Nếu mất mạng hoặc server chưa bật
-      setState(() {
-        _messages.add({"text": "Không kết nối được Server!\nLỗi: $e", "isUser": false});
-      });
+      if (!mounted) return;
+      _messages.add(
+        ChatMessage(
+          text:
+              'Không kết nối được tới server. Vui lòng kiểm tra lại.\nLỗi: $e',
+          isUser: false,
+          source: 'system',
+        ),
+      );
     } finally {
-      setState(() {
-        _isLoading = false; // Tắt icon loading dù thành công hay thất bại
-      });
+      if (mounted) {
+        setState(() {
+          _isSending = false;
+        });
+      }
     }
+  }
+
+  // Bubble tin nhắn
+  Widget _buildMessageBubble(ChatMessage msg) {
+    final isUser = msg.isUser;
+
+    // màu nền theo nguồn
+    final Color bgColor;
+    if (isUser) {
+      bgColor = Colors.blueAccent;
+    } else {
+      if (msg.source == 'faq') {
+        bgColor = Colors.green.shade100;
+      } else if (msg.source == 'ai') {
+        bgColor = Colors.orange.shade100;
+      } else {
+        // system hoặc null
+        bgColor = Colors.grey.shade200;
+      }
+    }
+
+    final align =
+        isUser ? CrossAxisAlignment.end : CrossAxisAlignment.start;
+    final radius = BorderRadius.circular(12);
+
+    // label nhỏ bên dưới
+    String? sourceLabel;
+    if (!isUser) {
+      if (msg.source == 'faq') {
+        sourceLabel = '💡 Trả lời từ FAQ (${msg.topic ?? "FAQ"})';
+      } else if (msg.source == 'ai') {
+        sourceLabel = '🤖 Trả lời từ AI (tham khảo)';
+      } else if (msg.source == 'system') {
+        sourceLabel = '⚙ Thông báo hệ thống';
+      }
+    }
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 8.0),
+      child: Column(
+        crossAxisAlignment: align,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: bgColor,
+              borderRadius: radius,
+            ),
+            child: Text(
+              msg.text,
+              style: TextStyle(
+                color: isUser ? Colors.white : Colors.black87,
+              ),
+            ),
+          ),
+          if (sourceLabel != null)
+            Padding(
+              padding: const EdgeInsets.only(top: 2.0),
+              child: Text(
+                sourceLabel,
+                style: TextStyle(
+                  fontSize: 11,
+                  color: Colors.grey.shade600,
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+
+  // Hàng gợi ý câu hỏi nhanh
+  Widget _buildQuickSuggestions() {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 6.0),
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          children: _quickQuestions.map((q) {
+            return Padding(
+              padding: const EdgeInsets.only(right: 6.0),
+              child: ActionChip(
+                label: Text(
+                  q,
+                  style: const TextStyle(fontSize: 12),
+                ),
+                onPressed: _isSending
+                    ? null
+                    : () {
+                        _controller.text = q;
+                        _sendMessage();
+                      },
+              ),
+            );
+          }).toList(),
+        ),
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Chatbot Sinh Viên"),
-        backgroundColor: Colors.blueAccent,
-        foregroundColor: Colors.white,
+        title: const Text('Trợ lý ảo tuyển sinh'),
       ),
       body: Column(
         children: [
-          // KHUNG HIỂN THỊ TIN NHẮN
+          // ⭐ Gợi ý câu hỏi nhanh
+          _buildQuickSuggestions(),
+
+          // danh sách tin nhắn
           Expanded(
             child: ListView.builder(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
               itemCount: _messages.length,
               itemBuilder: (context, index) {
                 final msg = _messages[index];
-                final isUser = msg['isUser'];
-                return Align(
-                  alignment: isUser ? Alignment.centerRight : Alignment.centerLeft,
-                  child: Container(
-                    margin: const EdgeInsets.symmetric(vertical: 5),
-                    padding: const EdgeInsets.all(12),
-                    constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.75),
-                    decoration: BoxDecoration(
-                      color: isUser ? Colors.blue[100] : Colors.grey[200],
-                      borderRadius: BorderRadius.only(
-                        topLeft: const Radius.circular(15),
-                        topRight: const Radius.circular(15),
-                        bottomLeft: isUser ? const Radius.circular(15) : Radius.zero,
-                        bottomRight: isUser ? Radius.zero : const Radius.circular(15),
-                      ),
-                    ),
-                    child: Text(
-                      msg['text'],
-                      style: const TextStyle(fontSize: 16),
-                    ),
-                  ),
-                );
+                return _buildMessageBubble(msg);
               },
             ),
           ),
 
-          // ICON LOADING (Khi đang chờ server)
-          if (_isLoading)
+          if (_isSending)
             const Padding(
-              padding: EdgeInsets.all(8.0),
-              child: CircularProgressIndicator(),
+              padding: EdgeInsets.only(bottom: 4.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    width: 16,
+                    height: 16,
+                    child: CircularProgressIndicator(strokeWidth: 2),
+                  ),
+                  SizedBox(width: 8),
+                  Text(
+                    'Đang xử lý câu hỏi của bạn...',
+                    style: TextStyle(fontSize: 12),
+                  ),
+                ],
+              ),
             ),
 
-          // KHUNG NHẬP LIỆU
-          Container(
-            padding: const EdgeInsets.all(10),
-            color: Colors.white,
+          const Divider(height: 1),
+
+          // ô nhập + nút gửi
+          Padding(
+            padding:
+                const EdgeInsets.symmetric(horizontal: 8.0, vertical: 6.0),
             child: Row(
               children: [
                 Expanded(
                   child: TextField(
                     controller: _controller,
-                    decoration: InputDecoration(
-                      hintText: "Hỏi gì đi bạn...",
-                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(30)),
-                      contentPadding: const EdgeInsets.symmetric(horizontal: 20),
-                    ),
+                    textInputAction: TextInputAction.send,
                     onSubmitted: (_) => _sendMessage(),
+                    decoration: const InputDecoration(
+                      hintText: 'Nhập câu hỏi của bạn...',
+                      border: OutlineInputBorder(),
+                      isDense: true,
+                    ),
                   ),
                 ),
-                const SizedBox(width: 10),
-                FloatingActionButton(
-                  onPressed: _sendMessage,
-                  backgroundColor: Colors.blueAccent,
-                  mini: true,
-                  child: const Icon(Icons.send, color: Colors.white),
+                const SizedBox(width: 8),
+                IconButton(
+                  icon: const Icon(Icons.send),
+                  onPressed: _isSending ? null : _sendMessage,
                 ),
               ],
             ),

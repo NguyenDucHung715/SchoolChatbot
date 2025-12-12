@@ -1,16 +1,33 @@
-# client
+# 📚 School Chatbot – Trợ lý ảo tuyển sinh & hỗ trợ sinh viên
 
-A new Flutter project.
+Dự án xây dựng một ứng dụng **chatbot hỗ trợ tuyển sinh / sinh viên** gồm:
 
-## Getting Started
+- 🧠 **Backend**: FastAPI + kho **FAQ** + AI (Gemini + ChatGPT fallback)
+- 📱 **Frontend**: Ứng dụng Flutter (web/mobile) giao diện chat thân thiện
+- 📝 **Log lịch sử**: Lưu tất cả hỏi–đáp để phục vụ thống kê & báo cáo
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 1. Kiến trúc tổng quan
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```text
+Flutter Client (web/mobile)
+        |
+        |  HTTP POST /chat  (JSON: { "text": "..." })
+        v
+FastAPI Backend (Python)
+        |
+        |-- 1. Chuẩn hoá tiếng Việt (bỏ dấu, lower-case, ... )
+        |-- 2. Tìm trong kho FAQ (faqs.json)
+        |       └→ Nếu tìm được: trả lời ngay, source = "faq"
+        |
+        |-- 3. Nếu không có trong FAQ:
+        |       └→ Gọi AI:
+        |             - Ưu tiên Gemini (google-genai)
+        |             - Nếu lỗi/quá tải → fallback sang OpenAI (ChatGPT)
+        |       └→ source = "ai"
+        |
+        └-- 4. Nếu cả FAQ & AI đều lỗi:
+                └→ Trả về thông báo hệ thống, source = "system"
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Mỗi lượt hỏi–đáp đều được ghi vào: server/logs/chat_history.jsonl

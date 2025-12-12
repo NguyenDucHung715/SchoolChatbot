@@ -1,0 +1,58 @@
+# =========================
+# ROOT .gitignore (SchoolChatbot)
+# =========================
+
+# ----- Secrets -----
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+
+# ----- Python (server) -----
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.log
+*.sqlite3
+
+# Virtual envs
+.venv/
+venv/
+env/
+ENV/
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# Server logs
+server/logs/
+logs/
+
+# ----- Flutter / Dart (client) -----
+# Build outputs
+client/build/
+build/
+
+# Dart tool cache
+client/.dart_tool/
+.dart_tool/
+
+# Flutter generated files
+client/.flutter-plugins
+client/.flutter-plugins-dependencies
+client/.packages
+client/.metadata
+
+# IDE / Editor
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db

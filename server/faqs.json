@@ -1,0 +1,707 @@
+[
+  {
+    "id": 1,
+    "topic": "tuyển sinh",
+    "questions": [
+      "Các phương thức tuyển sinh của trường là gì?",
+      "Trường có những phương thức tuyển sinh nào?"
+    ],
+    "keywords": [
+      "tuyển sinh",
+      "phương thức tuyển sinh",
+      "xét tuyển",
+      "xet tuyen",
+      "tuyen sinh"
+    ],
+    "answer": "📚 Phương thức tuyển sinh (demo)\n- Xét tuyển dựa trên kết quả thi THPT Quốc gia.\n- Xét tuyển dựa trên học bạ THPT.\n- Một số diện tuyển thẳng theo quy định của Bộ GD&ĐT và của trường.\n👉 Bạn hãy cập nhật lại nội dung này theo đúng đề án tuyển sinh chính thức của trường."
+  },
+  {
+    "id": 2,
+    "topic": "tuyển sinh",
+    "questions": [
+      "Đối tượng được đăng ký xét tuyển là ai?",
+      "Ai được đăng ký xét tuyển vào trường?"
+    ],
+    "keywords": [
+      "đối tượng tuyển sinh",
+      "ai được đăng ký",
+      "dieu kien du tuyen"
+    ],
+    "answer": "🎯 Đối tượng tuyển sinh (demo)\n- Thí sinh đã tốt nghiệp THPT hoặc tương đương.\n- Thí sinh có đủ sức khỏe để học tập theo quy định.\n👉 Hãy sửa lại cho đúng theo thông báo tuyển sinh của trường."
+  },
+  {
+    "id": 3,
+    "topic": "tuyển sinh",
+    "questions": [
+      "Chỉ tiêu tuyển sinh hàng năm là bao nhiêu?",
+      "Mỗi năm trường tuyển bao nhiêu sinh viên?"
+    ],
+    "keywords": [
+      "chỉ tiêu tuyển sinh",
+      "so luong tuyen sinh",
+      "tuyen bao nhieu"
+    ],
+    "answer": "📊 Chỉ tiêu tuyển sinh (demo)\n- Chỉ tiêu tuyển sinh thay đổi theo từng năm và từng ngành.\n- Thí sinh nên xem thông báo tuyển sinh mới nhất trên website hoặc fanpage chính thức của trường.\n👉 Bạn cập nhật lại số liệu đúng cho từng ngành/năm."
+  },
+  {
+    "id": 4,
+    "topic": "tuyển sinh",
+    "questions": [
+      "Trường đào tạo những ngành nào?",
+      "Các ngành đào tạo của trường là gì?"
+    ],
+    "keywords": [
+      "ngành đào tạo",
+      "nganh dao tao",
+      "ngành học",
+      "chuyên ngành",
+      "cong nghe thong tin"
+    ],
+    "answer": "🎓 Ngành đào tạo (demo)\n- Nhóm ngành Công nghệ thông tin.\n- Nhóm ngành Điện - Điện tử.\n- Nhóm ngành Cơ khí.\n- Nhóm ngành Kinh tế - Dịch vụ.\n👉 Bạn thay bằng đúng danh sách ngành của trường bạn."
+  },
+  {
+    "id": 5,
+    "topic": "tuyển sinh",
+    "questions": [
+      "Điều kiện xét tuyển học bạ là gì?",
+      "Xét học bạ cần điều kiện gì?"
+    ],
+    "keywords": [
+      "xét học bạ",
+      "xet hoc ba",
+      "diem hoc ba",
+      "dieu kien hoc ba"
+    ],
+    "answer": "📖 Điều kiện xét tuyển học bạ (demo)\n- Tốt nghiệp THPT hoặc tương đương.\n- Điểm trung bình tổ hợp môn xét tuyển đạt từ ngưỡng do trường quy định.\n- Không có môn nào trong tổ hợp xét tuyển bị điểm liệt.\n👉 Cập nhật lại cho đúng điều kiện xét học bạ của trường."
+  },
+  {
+    "id": 6,
+    "topic": "tuyển sinh",
+    "questions": [
+      "Điều kiện xét tuyển theo điểm thi THPT là gì?",
+      "Xét tuyển bằng điểm thi THPT như thế nào?"
+    ],
+    "keywords": [
+      "xét tuyển điểm thi",
+      "xet diem thi",
+      "thi thpt",
+      "diem san"
+    ],
+    "answer": "📝 Xét tuyển bằng điểm thi THPT (demo)\n- Sử dụng kết quả kỳ thi tốt nghiệp THPT với các tổ hợp môn do trường quy định.\n- Điểm xét tuyển phải đạt từ ngưỡng điểm sàn của trường.\n👉 Bạn sửa lại cho đúng với phương thức xét theo điểm thi nếu trường áp dụng."
+  },
+  {
+    "id": 7,
+    "topic": "tuyển sinh",
+    "questions": [
+      "Thời gian nộp hồ sơ xét tuyển là khi nào?",
+      "Hạn cuối nộp hồ sơ tuyển sinh?"
+    ],
+    "keywords": [
+      "thời gian nộp hồ sơ",
+      "han nop ho so",
+      "lich tuyen sinh",
+      "thoi gian xet tuyen"
+    ],
+    "answer": "🗓 Thời gian nộp hồ sơ (demo)\n- Thời gian nhận hồ sơ tuyển sinh được chia thành nhiều đợt trong năm.\n- Thí sinh cần theo dõi thông báo mới nhất trên website và fanpage của trường để biết mốc thời gian cụ thể.\n👉 Cập nhật lại theo lịch tuyển sinh từng năm."
+  },
+  {
+    "id": 8,
+    "topic": "tuyển sinh",
+    "questions": [
+      "Hồ sơ đăng ký xét tuyển gồm những gì?",
+      "Nộp hồ sơ tuyển sinh cần giấy tờ gì?"
+    ],
+    "keywords": [
+      "hồ sơ xét tuyển",
+      "ho so xet tuyen",
+      "giay to can nop"
+    ],
+    "answer": "📂 Hồ sơ đăng ký xét tuyển (demo)\n- Phiếu đăng ký xét tuyển theo mẫu của trường.\n- Bản sao công chứng học bạ THPT.\n- Bản sao công chứng bằng tốt nghiệp hoặc giấy chứng nhận tốt nghiệp tạm thời.\n- Bản sao CMND/CCCD.\n- Giấy tờ ưu tiên (nếu có).\n👉 Bạn chỉnh lại cho đúng với hướng dẫn hồ sơ của trường."
+  },
+  {
+    "id": 9,
+    "topic": "tuyển sinh",
+    "questions": [
+      "Lệ phí xét tuyển là bao nhiêu?",
+      "Phí đăng ký xét tuyển là bao nhiêu tiền?"
+    ],
+    "keywords": [
+      "lệ phí xét tuyển",
+      "phi xet tuyen",
+      "le phi dang ky"
+    ],
+    "answer": "💵 Lệ phí xét tuyển (demo)\n- Mức lệ phí xét tuyển được quy định theo từng năm.\n- Thí sinh nên xem thông báo tuyển sinh mới nhất để biết mức lệ phí và phương thức nộp.\n👉 Cập nhật mức lệ phí thật theo thông báo của trường."
+  },
+  {
+    "id": 10,
+    "topic": "tuyển sinh",
+    "questions": [
+      "Có thể đăng ký nhiều nguyện vọng không?",
+      "Em được đăng ký bao nhiêu nguyện vọng?"
+    ],
+    "keywords": [
+      "nguyện vọng",
+      "nguyen vong",
+      "dang ky nhieu nganh"
+    ],
+    "answer": "📌 Nguyện vọng xét tuyển (demo)\n- Thí sinh có thể đăng ký nhiều ngành/nguyện vọng theo quy định của trường.\n- Các nguyện vọng được xét theo thứ tự ưu tiên do thí sinh đăng ký.\n👉 Bạn cập nhật lại theo quy định cụ thể về số lượng nguyện vọng."
+  },
+  {
+    "id": 11,
+    "topic": "ngành học",
+    "questions": [
+      "Ngành Công nghệ thông tin học những gì?",
+      "Chương trình đào tạo ngành CNTT gồm những môn nào?"
+    ],
+    "keywords": [
+      "ngành công nghệ thông tin",
+      "nganh cntt",
+      "hoc cntt",
+      "chuong trinh cntt"
+    ],
+    "answer": "💻 Ngành Công nghệ thông tin (demo)\n- Kiến thức nền tảng về lập trình, cơ sở dữ liệu, mạng máy tính.\n- Các môn về phát triển phần mềm, ứng dụng web/mobile, an ninh mạng.\n- Thực hành tại phòng lab và doanh nghiệp.\n👉 Bạn thay bằng mô tả chương trình đào tạo thực tế của ngành CNTT tại trường."
+  },
+  {
+    "id": 12,
+    "topic": "ngành học",
+    "questions": [
+      "Thời gian đào tạo hệ cao đẳng là bao lâu?",
+      "Học cao đẳng mất mấy năm?"
+    ],
+    "keywords": [
+      "thời gian đào tạo",
+      "hoc bao lau",
+      "mất mấy năm"
+    ],
+    "answer": "⏱ Thời gian đào tạo (demo)\n- Thời gian đào tạo hệ Cao đẳng chính quy thường từ 2 đến 3 năm, tùy chương trình và tiến độ học của sinh viên.\n👉 Bạn sửa lại theo thời gian đào tạo chuẩn của trường."
+  },
+  {
+    "id": 13,
+    "topic": "ngành học",
+    "questions": [
+      "Một năm có mấy học kỳ?",
+      "Lịch học trong năm như thế nào?"
+    ],
+    "keywords": [
+      "một năm mấy học kỳ",
+      "lich hoc",
+      "hoc ky"
+    ],
+    "answer": "📅 Năm học và học kỳ (demo)\n- Thông thường mỗi năm học có 2 học kỳ chính và có thể có học kỳ hè.\n- Lịch học được nhà trường thông báo trước đầu mỗi năm học.\n👉 Bạn cập nhật lại đúng với lịch năm học của trường."
+  },
+  {
+    "id": 14,
+    "topic": "học phí",
+    "questions": [
+      "Học phí một tín chỉ là bao nhiêu?",
+      "Học phí 1 tín chỉ là bao nhiêu tiền?"
+    ],
+    "keywords": [
+      "học phí một tín chỉ",
+      "hoc phi mot tin chi",
+      "gia tin chi",
+      "muc hoc phi tin chi",
+      "học phí",
+      "hoc phi",
+      "hoc phi bao nhieu"
+    ],
+    "answer": "💰 Học phí một tín chỉ (demo)\n- Mức học phí 1 tín chỉ tùy ngành và từng năm học.\n- Sinh viên xem thông báo học phí chi tiết trên website hoặc phòng tài vụ.\n👉 Bạn thay bằng mức học phí cụ thể của từng nhóm ngành."
+  },
+  {
+    "id": 15,
+    "topic": "học phí",
+    "questions": [
+      "Học phí một học kỳ khoảng bao nhiêu?",
+      "Một kỳ phải đóng bao nhiêu tiền học phí?"
+    ],
+    "keywords": [
+      "học phí một học kỳ",
+      "hoc phi mot hoc ky",
+      "hoc phi 1 ky",
+      "dong bao nhieu mot ky"
+    ],
+    "answer": "💳 Học phí một học kỳ (demo)\n- Học phí 1 học kỳ phụ thuộc vào số tín chỉ đăng ký (thường từ 14-18 tín chỉ/kỳ).\n- Tổng học phí = số tín chỉ * đơn giá/tín chỉ.\n👉 Bạn có thể đưa ví dụ cụ thể cho một ngành để sinh viên dễ hình dung."
+  },
+  {
+    "id": 16,
+    "topic": "học phí",
+    "questions": [
+      "Đóng học phí bằng cách nào?",
+      "Hình thức thanh toán học phí ra sao?"
+    ],
+    "keywords": [
+      "đóng học phí",
+      "dong hoc phi",
+      "thanh toan hoc phi",
+      "nop tien hoc phi"
+    ],
+    "answer": "🏦 Hình thức đóng học phí (demo)\n- Đóng trực tiếp tại phòng tài vụ của trường.\n- Chuyển khoản qua ngân hàng theo thông tin tài khoản của trường.\n👉 Bạn cập nhật lại đúng số tài khoản, nội dung chuyển khoản và hướng dẫn chi tiết."
+  },
+  {
+    "id": 17,
+    "topic": "học phí",
+    "questions": [
+      "Nộp học phí trễ có bị phạt không?",
+      "Đóng học phí trễ hạn thì như thế nào?"
+    ],
+    "keywords": [
+      "trễ học phí",
+      "nop hoc phi tre",
+      "dong tre hoc phi",
+      "phat hoc phi"
+    ],
+    "answer": "⏰ Nộp học phí trễ (demo)\n- Sinh viên nộp học phí trễ có thể bị tính lãi phạt hoặc hạn chế đăng ký môn học cho học kỳ sau.\n- Cần liên hệ phòng tài vụ/đào tạo để được hướng dẫn khi có lý do chính đáng.\n👉 Bạn thay bằng quy định cụ thể của trường."
+  },
+  {
+    "id": 18,
+    "topic": "học bổng",
+    "questions": [
+      "Trường có học bổng không?",
+      "Điều kiện nhận học bổng là gì?"
+    ],
+    "keywords": [
+      "học bổng",
+      "hoc bong",
+      "hoc bong khuyen khich",
+      "hoc bong dau vao"
+    ],
+    "answer": "🏆 Học bổng (demo)\n- Học bổng đầu vào dành cho thí sinh có điểm xét tuyển cao.\n- Học bổng khuyến khích học tập cho sinh viên có kết quả học tập tốt mỗi học kỳ.\n- Một số học bổng tài trợ từ doanh nghiệp, tổ chức.\n👉 Bạn cập nhật lại điều kiện, mức học bổng và quy trình xét."
+  },
+  {
+    "id": 19,
+    "topic": "học bổng",
+    "questions": [
+      "Điểm trung bình bao nhiêu thì được học bổng?",
+      "Muốn nhận học bổng cần đạt những tiêu chí gì?"
+    ],
+    "keywords": [
+      "diem trung binh hoc bong",
+      "dieu kien nhan hoc bong",
+      "xet hoc bong"
+    ],
+    "answer": "📈 Điều kiện học bổng (demo)\n- Đạt điểm trung bình học kỳ/tích lũy từ ngưỡng do trường quy định.\n- Không có môn học bị điểm F hoặc vi phạm kỷ luật.\n👉 Bạn thay bằng quy định chi tiết về điểm số và tiêu chí xét học bổng."
+  },
+  {
+    "id": 20,
+    "topic": "quy chế",
+    "questions": [
+      "Khi nào bị cảnh báo học vụ?",
+      "Điều kiện để không bị cảnh báo học vụ là gì?"
+    ],
+    "keywords": [
+      "cảnh báo học vụ",
+      "canh bao hoc vu",
+      "bi canh bao",
+      "diem tich luy thap"
+    ],
+    "answer": "⚠️ Cảnh báo học vụ (demo)\n- Sinh viên bị cảnh báo học vụ khi điểm trung bình tích lũy dưới ngưỡng quy định của trường.\n- Nếu nhiều học kỳ liên tiếp bị cảnh báo, sinh viên có thể bị buộc thôi học.\n👉 Cập nhật lại ngưỡng điểm cụ thể (ví dụ: dưới 2.0/4.0) theo quy chế."
+  },
+  {
+    "id": 21,
+    "topic": "quy chế",
+    "questions": [
+      "Điều kiện để được tốt nghiệp là gì?",
+      "Muốn được tốt nghiệp cần đạt những yêu cầu nào?"
+    ],
+    "keywords": [
+      "điều kiện tốt nghiệp",
+      "dieu kien tot nghiep",
+      "ra truong"
+    ],
+    "answer": "🎓 Điều kiện tốt nghiệp (demo)\n- Hoàn thành đủ số tín chỉ trong chương trình đào tạo.\n- Đạt điểm trung bình tích lũy từ ngưỡng tốt nghiệp của trường.\n- Hoàn thành nghĩa vụ học phí và các nghĩa vụ khác.\n👉 Bạn chỉnh lại nếu trường yêu cầu thêm chứng chỉ ngoại ngữ, tin học..."
+  },
+  {
+    "id": 22,
+    "topic": "quy chế",
+    "questions": [
+      "Muốn bảo lưu kết quả học tập thì làm sao?",
+      "Quy định về bảo lưu kết quả học tập?"
+    ],
+    "keywords": [
+      "bảo lưu kết quả",
+      "bao luu hoc tap",
+      "nghi hoc tam thoi"
+    ],
+    "answer": "📘 Bảo lưu kết quả học tập (demo)\n- Sinh viên có lý do chính đáng có thể xin bảo lưu kết quả học tập trong một thời gian nhất định.\n- Cần làm đơn xin bảo lưu và được nhà trường phê duyệt.\n👉 Bạn cập nhật thời gian tối đa được bảo lưu và quy trình chi tiết."
+  },
+  {
+    "id": 23,
+    "topic": "quy chế",
+    "questions": [
+      "Học lại và cải thiện điểm khác nhau thế nào?",
+      "Khi nào phải học lại môn?"
+    ],
+    "keywords": [
+      "học lại",
+      "hoc lai",
+      "cai thien diem",
+      "thi lai"
+    ],
+    "answer": "🔁 Học lại và cải thiện (demo)\n- Học lại: áp dụng khi sinh viên không đạt (trượt) môn học.\n- Cải thiện điểm: áp dụng khi đã qua môn nhưng muốn nâng cao điểm.\n👉 Bạn thay bằng quy định cụ thể của trường về số lần được học lại/cải thiện."
+  },
+  {
+    "id": 24,
+    "topic": "thủ tục",
+    "questions": [
+      "Xin giấy xác nhận sinh viên như thế nào?",
+      "Thủ tục xin giấy xác nhận đang học?"
+    ],
+    "keywords": [
+      "giấy xác nhận sinh viên",
+      "giay xac nhan sinh vien",
+      "giay dang hoc"
+    ],
+    "answer": "📄 Giấy xác nhận sinh viên (demo)\n- Sinh viên liên hệ phòng Công tác sinh viên/Phòng đào tạo để xin giấy xác nhận.\n- Cần cung cấp mã số sinh viên và thông tin cần xác nhận.\n👉 Bạn cập nhật lại địa điểm và thời gian làm việc cụ thể."
+  },
+  {
+    "id": 25,
+    "topic": "thủ tục",
+    "questions": [
+      "Xin bảng điểm thì làm thế nào?",
+      "Thủ tục xin bảng điểm tạm thời?"
+    ],
+    "keywords": [
+      "xin bảng điểm",
+      "xin bang diem",
+      "bang diem tam thoi"
+    ],
+    "answer": "📑 Bảng điểm (demo)\n- Sinh viên làm đơn xin cấp bảng điểm tại phòng đào tạo.\n- Có thể có lệ phí cấp bảng điểm theo số bản.\n👉 Bạn thay nội dung theo đúng quy trình của trường."
+  },
+  {
+    "id": 26,
+    "topic": "ký túc xá",
+    "questions": [
+      "Trường có ký túc xá cho sinh viên không?",
+      "Điều kiện đăng ký ký túc xá là gì?"
+    ],
+    "keywords": [
+      "ký túc xá",
+      "ky tuc xa",
+      "ktx",
+      "noi o sinh vien"
+    ],
+    "answer": "🏠 Ký túc xá (demo)\n- Trường có ký túc xá dành cho sinh viên với số lượng chỗ ở hạn chế.\n- Ưu tiên cho sinh viên năm nhất, vùng xa, hoàn cảnh khó khăn.\n👉 Bạn cập nhật lại vị trí KTX, mức phí và cách nộp hồ sơ đăng ký."
+  },
+  {
+    "id": 27,
+    "topic": "ký túc xá",
+    "questions": [
+      "Phí ở ký túc xá là bao nhiêu?",
+      "Ký túc xá có những tiện ích gì?"
+    ],
+    "keywords": [
+      "học phí ký túc xá",
+      "phi o ktx",
+      "tien phong ktx",
+      "tien phong ky tuc xa"
+    ],
+    "answer": "💤 Phí và tiện ích ký túc xá (demo)\n- Mức phí ở ký túc xá phụ thuộc vào loại phòng và quy định từng năm.\n- KTX có thể bao gồm wifi, khu sinh hoạt chung, khu tự học...\n👉 Bạn thay bằng mức phí cụ thể và các tiện ích thực tế."
+  },
+  {
+    "id": 28,
+    "topic": "cơ sở vật chất",
+    "questions": [
+      "Trường có thư viện cho sinh viên không?",
+      "Giờ mở cửa của thư viện như thế nào?"
+    ],
+    "keywords": [
+      "thư viện",
+      "thu vien",
+      "muon sach"
+    ],
+    "answer": "📚 Thư viện (demo)\n- Trường có thư viện với sách chuyên ngành, giáo trình và tài liệu tham khảo.\n- Giờ mở cửa và quy định mượn trả sách được niêm yết tại thư viện.\n👉 Bạn cập nhật thời gian mở cửa và các dịch vụ của thư viện."
+  },
+  {
+    "id": 29,
+    "topic": "cơ sở vật chất",
+    "questions": [
+      "Trường có khu thực hành, xưởng, phòng lab không?",
+      "Cơ sở vật chất thực hành như thế nào?"
+    ],
+    "keywords": [
+      "xưởng thực hành",
+      "xuong thuc hanh",
+      "phong lab",
+      "co so vat chat"
+    ],
+    "answer": "🛠 Cơ sở vật chất thực hành (demo)\n- Trường trang bị phòng thực hành, phòng lab, xưởng thực tập cho các ngành kỹ thuật.\n- Sinh viên được thực hành thường xuyên theo kế hoạch học tập.\n👉 Bạn mô tả thêm các phòng lab/xưởng nổi bật của trường."
+  },
+  {
+    "id": 30,
+    "topic": "hoạt động sinh viên",
+    "questions": [
+      "Trường có câu lạc bộ sinh viên không?",
+      "Có những câu lạc bộ nào?"
+    ],
+    "keywords": [
+      "câu lạc bộ",
+      "clb",
+      "hoat dong sinh vien"
+    ],
+    "answer": "🎉 Câu lạc bộ sinh viên (demo)\n- Trường có nhiều câu lạc bộ như: CLB học thuật, CLB văn nghệ, CLB thể thao...\n- Sinh viên có thể đăng ký tham gia để rèn luyện kỹ năng mềm.\n👉 Bạn cập nhật tên các CLB cụ thể của trường."
+  },
+  {
+    "id": 31,
+    "topic": "hoạt động sinh viên",
+    "questions": [
+      "Trường có tổ chức hoạt động ngoại khóa không?",
+      "Có chương trình tình nguyện cho sinh viên không?"
+    ],
+    "keywords": [
+      "hoạt động ngoại khóa",
+      "ngoai khoa",
+      "tinh nguyen",
+      "mua he xanh"
+    ],
+    "answer": "🤝 Hoạt động ngoại khóa (demo)\n- Trường thường xuyên tổ chức các hoạt động ngoại khóa, phong trào Đoàn - Hội, chương trình tình nguyện.\n- Đây là cơ hội tốt để sinh viên rèn luyện kỹ năng và kết nối bạn bè.\n👉 Bạn bổ sung tên một số chương trình tiêu biểu của trường."
+  },
+  {
+    "id": 32,
+    "topic": "việc làm",
+    "questions": [
+      "Cơ hội việc làm sau khi tốt nghiệp như thế nào?",
+      "Tỉ lệ sinh viên có việc làm sau tốt nghiệp là bao nhiêu?"
+    ],
+    "keywords": [
+      "cơ hội việc làm",
+      "viec lam sau tot nghiep",
+      "ty le viec lam"
+    ],
+    "answer": "💼 Cơ hội việc làm (demo)\n- Sinh viên sau khi tốt nghiệp có cơ hội làm việc tại các doanh nghiệp trong và ngoài nước.\n- Nhiều ngành có nhu cầu nhân lực cao như CNTT, Điện - Điện tử, Cơ khí.\n👉 Nếu trường có thống kê, bạn thêm tỉ lệ có việc làm sau 6-12 tháng."
+  },
+  {
+    "id": 33,
+    "topic": "việc làm",
+    "questions": [
+      "Trường có hỗ trợ giới thiệu việc làm không?",
+      "Có trung tâm hỗ trợ việc làm cho sinh viên không?"
+    ],
+    "keywords": [
+      "hỗ trợ việc làm",
+      "gioi thieu viec lam",
+      "trung tam viec lam"
+    ],
+    "answer": "🧭 Hỗ trợ việc làm (demo)\n- Trường có thể tổ chức ngày hội việc làm, kết nối doanh nghiệp tuyển dụng sinh viên.\n- Một số khoa/đơn vị phụ trách tư vấn và giới thiệu việc làm.\n👉 Bạn cập nhật tên đơn vị và các kênh hỗ trợ việc làm của trường."
+  },
+  {
+    "id": 34,
+    "topic": "hỗ trợ sinh viên",
+    "questions": [
+      "Sinh viên khó khăn có được hỗ trợ không?",
+      "Trường có chính sách hỗ trợ sinh viên nghèo không?"
+    ],
+    "keywords": [
+      "hỗ trợ sinh viên khó khăn",
+      "ho tro sinh vien",
+      "chinh sach ho tro"
+    ],
+    "answer": "🤲 Hỗ trợ sinh viên khó khăn (demo)\n- Trường có thể có quỹ hỗ trợ, miễn giảm học phí hoặc học bổng dành cho sinh viên có hoàn cảnh khó khăn.\n- Sinh viên liên hệ phòng Công tác sinh viên để được tư vấn.\n👉 Bạn cập nhật các chính sách cụ thể của trường."
+  },
+  {
+    "id": 35,
+    "topic": "hỗ trợ sinh viên",
+    "questions": [
+      "Trường có tư vấn tâm lý cho sinh viên không?",
+      "Nếu bị stress thì liên hệ ai?"
+    ],
+    "keywords": [
+      "tư vấn tâm lý",
+      "tu van tam ly",
+      "stress",
+      "ap luc hoc tap"
+    ],
+    "answer": "🧠 Tư vấn tâm lý (demo)\n- Một số trường có bộ phận tư vấn tâm lý hoặc hợp tác với chuyên gia để hỗ trợ sinh viên.\n- Sinh viên có thể liên hệ phòng Công tác sinh viên để được hướng dẫn.\n👉 Bạn cập nhật lại nếu trường có dịch vụ tư vấn chính thức."
+  },
+  {
+    "id": 36,
+    "topic": "liên hệ",
+    "questions": [
+      "Liên hệ tư vấn tuyển sinh bằng cách nào?",
+      "Em muốn hỏi trực tiếp thì liên hệ ở đâu?"
+    ],
+    "keywords": [
+      "liên hệ",
+      "lien he",
+      "tư vấn tuyển sinh",
+      "hotline",
+      "email tuyển sinh"
+    ],
+    "answer": "☎️ Kênh liên hệ tư vấn tuyển sinh (demo)\n- Hotline tư vấn: 0123 456 789.\n- Email: tuyensinh@tentruong.edu.vn.\n- Fanpage Facebook và website chính thức của trường.\n👉 Bạn thay bằng đúng số điện thoại, email và fanpage của trường."
+  },
+  {
+    "id": 37,
+    "topic": "liên hệ",
+    "questions": [
+      "Liên hệ phòng đào tạo như thế nào?",
+      "Em muốn hỏi về lịch học thì gặp ai?"
+    ],
+    "keywords": [
+      "liên hệ phòng đào tạo",
+      "phong dao tao",
+      "lich hoc",
+      "thoi khoa bieu"
+    ],
+    "answer": "📞 Liên hệ phòng đào tạo (demo)\n- Sinh viên có thể liên hệ phòng đào tạo trong giờ hành chính để hỏi về lịch học, đăng ký môn, quy chế.\n- Thông tin chi tiết về số phòng, số điện thoại, email được đăng trên website trường.\n👉 Bạn cập nhật lại thông tin phòng đào tạo của trường."
+  },
+  {
+    "id": 38,
+    "topic": "liên hệ",
+    "questions": [
+      "Liên hệ phòng công tác sinh viên như thế nào?",
+      "Muốn hỏi về chế độ chính sách thì gặp ai?"
+    ],
+    "keywords": [
+      "phòng công tác sinh viên",
+      "phong cong tac sinh vien",
+      "chế độ chính sách",
+      "che do chinh sach"
+    ],
+    "answer": "👥 Liên hệ phòng Công tác sinh viên (demo)\n- Phòng CTSV phụ trách các vấn đề về chế độ chính sách, học bổng, khen thưởng, kỷ luật.\n- Thông tin liên hệ cụ thể được đăng trên website hoặc bảng thông tin của trường.\n👉 Bạn cập nhật lại cho đúng với cơ cấu của trường."
+  },
+  {
+    "id": 39,
+    "topic": "hệ thống",
+    "questions": [
+      "Chatbot này dùng như thế nào?",
+      "Trợ lý ảo có thể giúp được gì?"
+    ],
+    "keywords": [
+      "cách sử dụng chatbot",
+      "huong dan chatbot",
+      "tro ly ao lam duoc gi"
+    ],
+    "answer": "🤖 Giới thiệu trợ lý ảo\n- Trợ lý ảo giúp trả lời các câu hỏi về tuyển sinh, ngành học, học phí, học bổng, quy chế và một số thủ tục sinh viên.\n- Bạn chỉ cần gõ câu hỏi tự nhiên bằng tiếng Việt, có dấu hoặc không dấu đều được.\n👉 Nếu câu hỏi nằm ngoài nội dung có sẵn, hệ thống sẽ cố gắng nhờ AI hỗ trợ, tuy nhiên đôi khi có thể không chính xác tuyệt đối."
+  },
+  {
+    "id": 40,
+    "topic": "hệ thống",
+    "questions": [
+      "Nếu chatbot trả lời sai thì phải làm sao?",
+      "Em thấy câu trả lời chưa đúng, phải liên hệ ai?"
+    ],
+    "keywords": [
+      "chatbot trả lời sai",
+      "tra loi sai",
+      "gop y chatbot"
+    ],
+    "answer": "🛠 Khi chatbot trả lời chưa chính xác\n- Các câu trả lời từ chatbot chỉ mang tính tham khảo.\n- Khi thông tin quan trọng, bạn nên kiểm tra lại trên website chính thức hoặc liên hệ trực tiếp phòng đào tạo/phòng CTSV.\n👉 Trong báo cáo hoặc sản phẩm, bạn có thể ghi rõ đây là hệ thống hỗ trợ, không thay thế hoàn toàn cán bộ tư vấn."
+  },
+  {
+    "id": 41,
+    "topic": "tuyển sinh",
+    "questions": [
+      "Có tuyển sinh trái ngành không?",
+      "Em học trái ngành có được đăng ký không?"
+    ],
+    "keywords": [
+      "tuyển sinh trái ngành",
+      "hoc trai nganh",
+      "doi nganh"
+    ],
+    "answer": "🔄 Tuyển sinh trái ngành (demo)\n- Việc đăng ký trái ngành phụ thuộc vào điều kiện tuyển sinh của từng ngành.\n- Một số ngành có thể yêu cầu nền tảng kiến thức phù hợp.\n👉 Bạn cập nhật lại theo quy định tuyển sinh cụ thể của trường."
+  },
+  {
+    "id": 42,
+    "topic": "tuyển sinh",
+    "questions": [
+      "Có tuyển sinh liên thông từ trung cấp không?",
+      "Trung cấp muốn liên thông lên cao đẳng được không?"
+    ],
+    "keywords": [
+      "tuyển sinh liên thông",
+      "lien thong",
+      "trung cap len cao dang"
+    ],
+    "answer": "📚 Tuyển sinh liên thông (demo)\n- Trường có thể tổ chức tuyển sinh liên thông từ Trung cấp lên Cao đẳng theo quy định.\n- Điều kiện bao gồm bằng tốt nghiệp Trung cấp và kinh nghiệm làm việc (nếu có yêu cầu).\n👉 Bạn thay bằng thông tin liên thông thực tế của trường."
+  },
+  {
+    "id": 43,
+    "topic": "thủ tục",
+    "questions": [
+      "Thủ tục nghỉ học tạm thời như thế nào?",
+      "Muốn xin tạm dừng học thì làm sao?"
+    ],
+    "keywords": [
+      "nghỉ học tạm thời",
+      "tam dung hoc",
+      "xin nghi hoc"
+    ],
+    "answer": "📝 Nghỉ học tạm thời (demo)\n- Sinh viên làm đơn xin nghỉ học tạm thời, nêu rõ lý do và thời gian nghỉ.\n- Đơn được cố vấn học tập và nhà trường xem xét, phê duyệt.\n👉 Bạn cập nhật lại mẫu đơn và quy trình cụ thể nếu có."
+  },
+  {
+    "id": 44,
+    "topic": "thủ tục",
+    "questions": [
+      "Thủ tục chuyển ngành học là gì?",
+      "Em muốn chuyển từ ngành này sang ngành khác được không?"
+    ],
+    "keywords": [
+      "chuyển ngành",
+      "chuyen nganh",
+      "doi nganh hoc"
+    ],
+    "answer": "🔁 Chuyển ngành học (demo)\n- Sinh viên có thể xin chuyển ngành nếu đáp ứng điều kiện về điểm số và chỉ tiêu ngành mới.\n- Cần nộp đơn xin chuyển ngành và được khoa/phòng đào tạo phê duyệt.\n👉 Bạn sửa lại theo quy định chuyển ngành của trường."
+  },
+  {
+    "id": 45,
+    "topic": "quy chế",
+    "questions": [
+      "Một tín chỉ tương đương bao nhiêu tiết học?",
+      "Cách tính số tiết của một môn học?"
+    ],
+    "keywords": [
+      "tín chỉ",
+      "tin chi",
+      "so tiet"
+    ],
+    "answer": "📏 Tín chỉ và số tiết (demo)\n- Một tín chỉ lý thuyết thường tương đương 15 tiết học trên lớp.\n- Môn học sẽ có tổng số tín chỉ và số tiết tương ứng.\n👉 Bạn chỉnh lại theo quy chế đào tạo tín chỉ của trường."
+  },
+  {
+    "id": 46,
+    "topic": "quy chế",
+    "questions": [
+      "Điều kiện được đăng ký học lại môn là gì?",
+      "Trượt môn thì xử lý thế nào?"
+    ],
+    "keywords": [
+      "trượt môn",
+      "truot mon",
+      "hoc lai mon",
+      "thi lai mon"
+    ],
+    "answer": "📚 Học lại môn (demo)\n- Nếu sinh viên không đạt điểm qua môn, phải đăng ký học lại môn đó ở học kỳ sau.\n- Việc học lại có thể phát sinh học phí tương ứng với số tín chỉ của môn.\n👉 Bạn cập nhật thêm quy định về số lần được học lại."
+  },
+  {
+    "id": 47,
+    "topic": "quy chế",
+    "questions": [
+      "Có bắt buộc tham gia đầy đủ các buổi học không?",
+      "Vắng học nhiều có bị ảnh hưởng điểm không?"
+    ],
+    "keywords": [
+      "vắng học",
+      "vang hoc",
+      "diem danh",
+      "chuyen can"
+    ],
+    "answer": "📌 Chuyên cần và điểm danh (demo)\n- Sinh viên cần đảm bảo tỷ lệ tham dự tối thiểu theo quy định để được dự thi kết thúc học phần.\n- Vắng học quá số buổi quy định có thể bị cấm thi.\n👉 Bạn sửa lại theo quy định chuyên cần của trường."
+  },
+  {
+    "id": 48,
+    "topic": "chào hỏi",
+    "questions": [
+      "hi",
+      "hello",
+      "xin chào",
+      "chào bạn"
+    ],
+    "keywords": [
+      "hi",
+      "hello",
+      "xin chào",
+      "chao",
+      "chao ban"
+    ],
+    "answer": "Xin chào! Mình là trợ lý ảo hỗ trợ sinh viên của trường. 🌟\nMình có thể giúp bạn về tuyển sinh, học phí, học bổng, quy chế và các thủ tục sinh viên.\nBạn muốn hỏi về vấn đề gì?"
+  }
+]
